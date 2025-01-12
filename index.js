@@ -1,0 +1,1 @@
+console.log("Hello! GM!", 100+1000)
