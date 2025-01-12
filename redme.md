@@ -1,4 +1,5 @@
 
+
 Project Credit from [WsCube Tech YTube](https://www.youtube.com/watch?v=vfaRzV3P92o)
 
 ## Basic Project Config
@@ -21,6 +22,42 @@ Project Credit from [WsCube Tech YTube](https://www.youtube.com/watch?v=vfaRzV3P
 - custom modules: build by developer
 - Third-party modules: we can import from 3rd party libraries(Express JS, Next JS, NPM)
 
-## commonjs vs modules
-- in common js we use require for import of class, function, variable etc.
+## type commonjs vs module in package.json file
+- in commonjs we use require for import of class, function, variable etc.
+    by default type is commonjs
+    `"type": "commonjs",`
 - in module we use import statement just like in ReactJS
+    `"type": "module",`
+
+## Topic wise learning
+ 1. Create a module and export it
+ 2. Type of export: default export and named export
+   ##### Default export and import:
+```
+     Export
+        const addToCart = () => {
+            return "Add to cart";
+        };
+
+        module.exports = addToCart;
+   
+     Import
+        const addToCart = require("./cartModule");
+```
+   ##### Named export and import:
+
+```
+     Export
+       const addToCart = () => {
+            return "Add to cart";
+        };
+
+        const changeQty = () =>{
+            return 5;
+        }
+        module.exports = {addToCart,changeQty};
+   
+     Import
+        const {addToCart,changeQty} = require("./cartModule");
+```
+
