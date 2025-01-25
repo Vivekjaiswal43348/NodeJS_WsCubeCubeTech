@@ -1,6 +1,7 @@
 
 
-Project Credit from [WsCube Tech YTube](https://www.youtube.com/watch?v=vfaRzV3P92o)
+# Project Code-1
+Project Credit : [WsCube Tech YTube](https://www.youtube.com/watch?v=vfaRzV3P92o)
 
 ## Basic Project Config
 1. npm init -y
@@ -18,11 +19,11 @@ Project Credit from [WsCube Tech YTube](https://www.youtube.com/watch?v=vfaRzV3P
 ```
 
 ## Types of Modules
-- core modules : Already available with node JS (FS, HTTP, PATH)
-- custom modules: build by developer
-- Third-party modules: we can import from 3rd party libraries(Express JS, Next JS, NPM)
+- `core modules` : Already available with node JS (FS, HTTP, PATH)
+- `custom modules`: build by developer
+- `Third-party modules`: we can import from 3rd party libraries(Express JS, Next JS, NPM)
 
-## type commonjs vs module in package.json file
+## type commonjs vs type module in package.json file
 - in commonjs we use require for import of class, function, variable etc.
     by default type is commonjs
     `"type": "commonjs",`
@@ -61,3 +62,5 @@ Project Credit from [WsCube Tech YTube](https://www.youtube.com/watch?v=vfaRzV3P
         const {addToCart,changeQty} = require("./cartModule");
 ```
 
+
+## Creating a server in NodeJS(seperate repo/local project)
